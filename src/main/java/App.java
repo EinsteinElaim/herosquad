@@ -26,8 +26,8 @@ public class App {
         staticFileLocation("/public");
 //        String connectionString = "jdbc:postgresql://localhost:5432/herosquad";      //connect to todolist, not todolist_test!
 //        Sql2o sql2o = new Sql2o(connectionString, "postgres", "password");
-        String connectionString = "jdbc:postgresql://ec2-54-197-48-79.compute-1.amazonaws.com:5432/dd9atnupft6c3p";
-        Sql2o sql2o = new Sql2o(connectionString, "wwrapikqmdhwkt", "9ef20a089add951f7b577926fce905a990551560008cd2e89f96a41ade30c47c");
+        String connectionString = "jdbc:postgresql://ec2-3-231-16-122.compute-1.amazonaws.com:5432/d36j2uacjqisnv";
+        Sql2o sql2o = new Sql2o(connectionString, "xafytqhmbmljhh", "2cf4f128e04650c32b9c9e15b5cb81f7187ee3e191e26c3898b00fd90adf25a4");
         Sql2oHeroDao heroDao = new Sql2oHeroDao(sql2o);
         Sql2oSquadDao squadDao = new Sql2oSquadDao(sql2o);
 
