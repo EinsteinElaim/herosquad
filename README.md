@@ -2,9 +2,6 @@
 ### Description
 This project is a hero-squad app that allows a user to manage heroes with efficiency. It also has squad integration so that you can add a hero to a squad. 
 
-### Live Link
-<a href="https://.herokuapp.com/">https://todolistwithdb.herokuapp.com/</a>
-
 ### Technologies Used
 This project was created using:
  1.Java
