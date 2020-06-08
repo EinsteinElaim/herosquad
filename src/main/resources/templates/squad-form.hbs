@@ -1,0 +1,41 @@
+{{#partial "content"}}
+    {{#if editSquad}}
+        <h1>Edit this squad!</h1>
+        <form action="/squads/{{squad.id}}" method="post">
+            <div class="form-group">
+                <label for="newSquadName">Edit this squad's name:</label>
+                <input id="newSquadName" name="newSquadName" type="text" value="{{squad.newSquadName}}">
+            </div>
+            <div class="form-group">
+                <label for="newCauseDedicatedToFighting">Edit this squad's dedication:</label>
+                <input id="newCauseDedicatedToFighting" name="newCauseDedicatedToFighting" type="text" value="{{squad.causeDedicatedToFighting}}">
+            </div>
+            <div class="form-group">
+                <label for="newSquadMembersCounter">Edit this squad's member counter:</label>
+                <input id="squadMembersCounter" name="squadMembersCounter" type="text" value="">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Go!</button>
+        </form>
+    {{else}}
+        <h1>Add a new Squad!</h1>
+        <form action="/squads" method="post">
+            <div class="form-group">
+                <label for="squadName">Squad Name:</label>
+                <input id="squadName" name="squadName" type="text">
+            </div>
+            <div class="form-group">
+                <label for="causeDedicatedToFighting">Squad Dedication:</label>
+                <input id="causeDedicatedToFighting" name="causeDedicatedToFighting" type="text">
+            </div>
+            <div class="form-group">
+                <!--            Add counter here            -->
+                <label for="squadMembersCounter">Max no of members:</label>
+                <input id="squadMembersCounter" name="squadMembersCounter" type="text">
+            </div>
+            <button type="submit" class="btn btn-primary">Go!</button>
+        </form>
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}
